@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_02ca78e4720e49499d18dd323835d01a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+              <h3 align="center" style="font-size:16px"><b>Russian Oligarch Real Estate Transactions/investments</b></h3>
+             
+    
+            <div class="folium-map" id="map_02ca78e4720e49499d18dd323835d01a" ></div>
+        
+</body>
+<script>    
+    
+            var map_02ca78e4720e49499d18dd323835d01a = L.map(
+                "map_02ca78e4720e49499d18dd323835d01a",
+                {
+                    center: [37.10993121818182, -77.39078148636365],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7f2e3295da84e9c96f5e05291cebf67 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_02ca78e4720e49499d18dd323835d01a);
+        
+    
+            var marker_cluster_3754d09bb52b4779a78e85d3999cce46 = L.markerClusterGroup(
+                {}
+            );
+            map_02ca78e4720e49499d18dd323835d01a.addLayer(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            var marker_0402da34088840cda7f25caf271b5301 = L.marker(
+                [25.7612272, -80.1363805],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_0402da34088840cda7f25caf271b5301.bindTooltip(
+                `<div>
+                     Name: <strong>Aras Agalarov</strong><br>     Address: <strong>7600 Fisher Island unit 7642, Miami Florida 33109 </strong><br>Brief Bio:     <strong>Founded one of Russia's leading development firms,<br>the Crocus Group. Forbes estimated his net worth<br>at $1.6 billion</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c717eb457534662b42f20a3363fcb43 = L.marker(
+                [25.7955326, -80.1992159],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_8c717eb457534662b42f20a3363fcb43.bindTooltip(
+                `<div>
+                     Name: <strong>Oleg Babibakov</strong><br>     Address: <strong>101 20th Street, Miami, Florida</strong><br>Brief Bio:     <strong>A mining Oligarch who is co-developing Missoni<br>Baia with Vlad Doronin in Edgewater.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_febf02cbaf184821ab836b274ae27613 = L.marker(
+                [26.732162, -80.0367618],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_febf02cbaf184821ab836b274ae27613.bindTooltip(
+                `<div>
+                     Name: <strong>Dmitry Rybolovlev</strong><br>     Address: <strong>525 North County Road, Palm Beach, Florida</strong><br>Brief Bio:     <strong>In 2010 Ryboloblev was reported to be the 10th<br>wealthiest person in Russia. He previously potash<br>producer Urakali and became president of Monaco's<br>football club, AS Monaco</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4746c9f15fb844d4a0e3e7505037003e = L.marker(
+                [40.7648261, -73.97781739999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_4746c9f15fb844d4a0e3e7505037003e.bindTooltip(
+                `<div>
+                     Name: <strong>Sergei Adoniev</strong><br>     Address: <strong>111 West 57th street, Manhattan, New York</strong><br>Brief Bio:     <strong>A former banana importer and co-owner of a major<br>Russian telecommunications company. Sergei Adoniev<br>and Albert Avdolyan invested in the 111 West 57th<br>Street project through a series of shell companies<br>to disguise their identities</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b74b615d41184254874700ae01b8994e = L.marker(
+                [40.7648261, -73.97781739999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_b74b615d41184254874700ae01b8994e.bindTooltip(
+                `<div>
+                     Name: <strong>Albert Avdolyan</strong><br>     Address: <strong>111 West 57th street, Manhattan, New York</strong><br>Brief Bio:     <strong>A wealthy telecommunications magnate. Sergei<br>Adoniev and Albert Avdolyan invested in the 111<br>West 57th Street project through a series of shell<br>companies to disguise their identities</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccef4658cd53412aafe45177b8f926de = L.marker(
+                [40.7451797, -73.9873646],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_ccef4658cd53412aafe45177b8f926de.bindTooltip(
+                `<div>
+                     Name: <strong>Boris Kuzinez</strong><br>     Address: <strong>260 Fifth Avenue, Manhattan, New York</strong><br>Brief Bio:     <strong>The CEO and Founder of Five Points Development</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b68474a48cb4cf39e45c8e64eebc8b8 = L.marker(
+                [40.77422199999999, -73.96456789999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_7b68474a48cb4cf39e45c8e64eebc8b8.bindTooltip(
+                `<div>
+                     Name: <strong>Roman Abramovich</strong><br>     Address: <strong>9 East 75th street, Manhattan, New York</strong><br>Brief Bio:     <strong>After the fall of the Soviet Union, Abramovich<br>grew rich after buying Russian state-owned assets<br>through a controversial privatization program.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2488b281a83f4f0a8e82d89f452b51a4 = L.marker(
+                [40.774133, -73.9644059],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_2488b281a83f4f0a8e82d89f452b51a4.bindTooltip(
+                `<div>
+                     Name: <strong>Roman Abramovich</strong><br>     Address: <strong>15 East 75th street, Manhattan, New York</strong><br>Brief Bio:     <strong>After the fall of the Soviet Union, Abramovich<br>grew rich after buying Russian state-owned assets<br>through a controversial privatization program.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_395d4c778a924f3a967fbedb73c68406 = L.marker(
+                [40.7715223, -73.9583525],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_395d4c778a924f3a967fbedb73c68406.bindTooltip(
+                `<div>
+                     Name: <strong>Roman Abramovich</strong><br>     Address: <strong>215 East 75th street, Manhattan, New York</strong><br>Brief Bio:     <strong>After the fall of the Soviet Union, Abramovich<br>grew rich after buying Russian state-owned assets<br>through a controversial privatization program.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e26d8e9dec9488583c6be5bfb97e0d2 = L.marker(
+                [40.7671909, -73.96962649999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_4e26d8e9dec9488583c6be5bfb97e0d2.bindTooltip(
+                `<div>
+                     Name: <strong>Oleg Deripaska</strong><br>     Address: <strong>11 East 64th Street, Manhattan, New York</strong><br>Brief Bio:     <strong>The founder of Rusal, he is blocked from entry<br>into the country</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74fdb51c24d44069b3bd1a98a1f01be2 = L.marker(
+                [40.7336045, -74.00060979999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_74fdb51c24d44069b3bd1a98a1f01be2.bindTooltip(
+                `<div>
+                     Name: <strong>Oleg Deripaska</strong><br>     Address: <strong>12 Gay Street, Manhattan, New York</strong><br>Brief Bio:     <strong>The founder of Rusal, he is blocked from entry<br>into the country</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a24cd5b48eb4070a373ed19110461f2 = L.marker(
+                [40.7663041, -73.9708407],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_9a24cd5b48eb4070a373ed19110461f2.bindTooltip(
+                `<div>
+                     Name: <strong>Len Blavatink</strong><br>     Address: <strong>2 East 63rd Street, Manhattan, New York</strong><br>Brief Bio:     <strong>Blavatink was born in Odessa when it was<br>controlled by the USSR. His wealth comes from a<br>myriad of investments in petrochemicals and<br>finance. He was knighted in the U.K. in 2017 for<br>his philanthropic work.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77eef8421e6f4b38a4b7352b504e5527 = L.marker(
+                [40.7671126, -73.9695833],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_77eef8421e6f4b38a4b7352b504e5527.bindTooltip(
+                `<div>
+                     Name: <strong>Len Blavatink</strong><br>     Address: <strong>15 East 64th Street, Manhattan, New York</strong><br>Brief Bio:     <strong>Blavatink was born in Odessa when it was<br>controlled by the USSR. His wealth comes from a<br>myriad of investments in petrochemicals and<br>finance. He was knighted in the U.K. in 2017 for<br>his philanthropic work.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b66dd75c7f546e3ab8e9cd621581d43 = L.marker(
+                [40.7676616, -73.9702234],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_4b66dd75c7f546e3ab8e9cd621581d43.bindTooltip(
+                `<div>
+                     Name: <strong>Len Blavatink</strong><br>     Address: <strong>834 Fifth Avenue, Manhattan, New York</strong><br>Brief Bio:     <strong>Blavatink was born in Odessa when it was<br>controlled by the USSR. His wealth comes from a<br>myriad of investments in petrochemicals and<br>finance. He was knighted in the U.K. in 2017 for<br>his philanthropic work.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cb98ae1cfc4432bb952562354650688 = L.marker(
+                [40.767004, -73.96939689999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_5cb98ae1cfc4432bb952562354650688.bindTooltip(
+                `<div>
+                     Name: <strong>Len Blavatink</strong><br>     Address: <strong>19 East 64th Street, Manhattan, New York</strong><br>Brief Bio:     <strong>Blavatink was born in Odessa when it was<br>controlled by the USSR. His wealth comes from a<br>myriad of investments in petrochemicals and<br>finance. He was knighted in the U.K. in 2017 for<br>his philanthropic work.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6c750b82e3149209029eb898fc8b6d8 = L.marker(
+                [40.778345, -73.96224],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_c6c750b82e3149209029eb898fc8b6d8.bindTooltip(
+                `<div>
+                     Name: <strong>Len Blavatink</strong><br>     Address: <strong>998 Fifth Avenue, Manhattan, New York</strong><br>Brief Bio:     <strong>Blavatink was born in Odessa when it was<br>controlled by the USSR. His wealth comes from a<br>myriad of investments in petrochemicals and<br>finance. He was knighted in the U.K. in 2017 for<br>his philanthropic work.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f68d6447a1a4344b6511f5fd4ff073e = L.marker(
+                [40.7730344, -73.963948],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_0f68d6447a1a4344b6511f5fd4ff073e.bindTooltip(
+                `<div>
+                     Name: <strong>Alexei Kuzmichev</strong><br>     Address: <strong>33 East 74th Street, Manhattan, New York</strong><br>Brief Bio:     <strong>Alfa Group co-founder. In March 2013, he sold his<br>stake in an energy venture, TNK-BP, to Russian<br>state-run oil company Rosneft for $2.5 billion</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fc59ef3fd9248b09c9e1d5dab4f2076 = L.marker(
+                [40.76457569999999, -73.97252259999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_0fc59ef3fd9248b09c9e1d5dab4f2076.bindTooltip(
+                `<div>
+                     Name: <strong>Eugene Shvidler</strong><br>     Address: <strong>785 Fifth Avenue, Apt 17AB, Manhattan, New York</strong><br>Brief Bio:     <strong>Shvidler made his fortunate during the<br>privatization of Russian Industries, particularly<br>the oil industry. As of October 2021, Forbes<br>estimated his net worth was estimated at $1.9<br>billion.</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a81e335098754956a655b5e6cedf2d1e = L.marker(
+                [40.7697189, -73.9810746],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_a81e335098754956a655b5e6cedf2d1e.bindTooltip(
+                `<div>
+                     Name: <strong>Dmitry Rybolovlev</strong><br>     Address: <strong>15 Central Park West, Manhattan, New York</strong><br>Brief Bio:     <strong>In 2010 Ryboloblev was reported to be the 10th<br>wealthiest person in Russia. He previously potash<br>producer Urakali and became president of Monaco's<br>football club, AS Monaco</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c1742895e4f40b7aada90a24073c15a = L.marker(
+                [25.77965, -80.15058839999999],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_2c1742895e4f40b7aada90a24073c15a.bindTooltip(
+                `<div>
+                     Name: <strong>Vlad Doronin</strong><br>     Address: <strong>26 Star Island drive, Miami Beach</strong><br>Brief Bio:     <strong>The founder and CEO of OKO, a developer with<br>projects in New York and Miami. He's also the CEO<br>of Aman, a Swiss-based multinational hospitality<br>company. Doronin has several South Florida<br>projects under construction: the Una Reisdencies<br>in Brickell, 830 Brickell office tower, Aman<br>Residences in the Faena District in Miami Beach,<br>and Missoni Baia condo tower in Edgewater</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0f51c01526944228264d19aaecefdea = L.marker(
+                [25.9965419, -80.1179916],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_f0f51c01526944228264d19aaecefdea.bindTooltip(
+                `<div>
+                     Name: <strong>Oleg Misevra</strong><br>     Address: <strong>2711 South Ocean Drive, PH 1, Hollywood FL</strong><br>Brief Bio:     <strong>Russian coal magnate who has earned Putin’s praise</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aa30b68e83f4f459f66d1a1ed6e188a = L.marker(
+                [34.1041122, -118.395863],
+                {}
+            ).addTo(marker_cluster_3754d09bb52b4779a78e85d3999cce46);
+        
+    
+            marker_2aa30b68e83f4f459f66d1a1ed6e188a.bindTooltip(
+                `<div>
+                     Name: <strong>Danil Khachaturov</strong><br>     Address: <strong>Trousdale Estates</strong><br>Brief Bio:     <strong>A Russian insurance tycoon with a net worth close<br>to $2 billion, according to Forbes</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
